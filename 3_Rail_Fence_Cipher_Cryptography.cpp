@@ -96,7 +96,7 @@ string decrypt(string str, int key)
     // Now reading the rail matrix in zing zag order to construct he resultant matrix
 
     direction_down = false;
-    
+
     row = col = 0;
     for (int i = 0; i < str.length(); i++)
     {
