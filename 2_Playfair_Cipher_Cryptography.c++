@@ -18,6 +18,7 @@ int removeWhiteSpace(string &plain, int ps)
     plain[count] = '\0';
     return count;
 }
+
 // * generateKeyTable ()=>
 void generateKeyTable(string key, char KeysTable[5][5])
 {
@@ -159,7 +160,6 @@ int main()
     lenKey = removeWhiteSpace(key, lenKey);
 
     lenStr = prepare(str, lenStr);
-    cout << str;
 
     generateKeyTable(key, KeysTable);
 
@@ -175,6 +175,6 @@ int main()
 
     encrypt(str, KeysTable, lenStr);
 
-    cout << "After  Encryption" << str;
+    cout << "After  Encryption : " << str;
     return 0;
 }
